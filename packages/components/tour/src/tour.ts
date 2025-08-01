@@ -1,4 +1,5 @@
 import {
+  CloseComponents,
   buildProps,
   definePropType,
   iconPropType,
@@ -44,10 +45,11 @@ export const tourProps = buildProps({
     default: true,
   },
   /**
-   * @description custom close icon
+   * @description custom close icon, default is Close
    */
   closeIcon: {
     type: iconPropType,
+    default: () => CloseComponents.Close,
   },
   /**
    * @description position of the guide card relative to the target element

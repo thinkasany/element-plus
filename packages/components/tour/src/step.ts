@@ -1,4 +1,9 @@
-import { buildProps, definePropType, iconPropType } from '@element-plus/utils'
+import {
+  CloseComponents,
+  buildProps,
+  definePropType,
+  iconPropType,
+} from '@element-plus/utils'
 import { tourContentProps } from './content'
 
 import type {
@@ -37,6 +42,7 @@ export const tourStepProps = buildProps({
    */
   closeIcon: {
     type: iconPropType,
+    default: () => CloseComponents.Close,
   },
   /**
    * @description whether to show the arrow
